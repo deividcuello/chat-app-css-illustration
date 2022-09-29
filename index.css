@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/*VARIABLES*/
+:root{
+    /*PRIMARY COLORS*/
+    --PaleViolet: hsl(276, 100%, 81%);
+    --PaleViolet: hsl(276, 100%, 81%);
+    --ModerateViolet: hsl(276, 55%, 52%);
+    --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+    --GrayishBlue: hsl(206, 6%, 79%);
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --DarkGrayishViolet: hsl(270, 7%, 64%);
+    
+    /*GRADIENT*/
+    --LightMagenta: hsl(293, 100%, 63%);
+    --LightViolet: hsl(264, 100%, 61%);
+
+    /*SECUNDARY COLORS*/
+    --White: hsl(0, 0%, 100%);
+    --LightGrayishViolet: hsl(270, 20%, 96%);
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --VeryLightMagenta: hsl(289, 100%, 72%);
+
+    /*FONTS*/
+    --FontFamily: 'Rubik', sans-serif;
+    --FontSize: 16px;
+
+}
+
+/*GENERAL STYLES*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: auto;
+}
+
+body{
+    background-color: var(--LightGrayishViolet);
+    font-size: var(--FontSize);
+    max-width: 1400px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+i{
+    color: var(--White);
+    cursor: pointer;
+}
+
+/*HERO*/
+#hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#hero .left{
+    position: relative;
+    align-self: center;
+    width: 683px;
+    display: flex;
+    justify-content: center;
+    height: 657px;
+}
+
+/*LEFT*/
+#hero .left .purple-effect{
+    position: absolute;
+    width: 314px;
+    height: calc(100% - 25px);
+    z-index: -1;
+    background: rgb(233,66,255);
+    background: linear-gradient(204deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 62%);
+    left: 0;
+    border-radius: 0 0 500px 500px;
+}
+
+#hero .smartphone{
+    position: relative;
+    background-color: var(--White);
+    height: 547px;
+    width: 280px;
+    border-radius: 33px;
+    padding: 10px;
+    margin-top: 55.25px;
+    left: 40px;
+    box-shadow: 13px 17px 51px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 13px 17px 51px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 17px 51px -12px rgba(0,0,0,0.75);                                                                                            
+}
+
+#hero .smartphone .screen{
+    border-radius: 33px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--LightGrayishViolet);
+    height: 100%;
+}
+
+#hero .smartphone .screen .header{
+    background: rgb(136,56,255);
+    background: linear-gradient(90deg, rgba(136,56,255,1) 42%, rgba(233,66,255,1) 100%);
+    padding: 28px 15px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+#hero .smartphone .screen .header .left-header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    color: var(--White);
+}
+
+#hero .smartphone .screen .header .name{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#hero .smartphone .screen .header .left-header .status{
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--GrayishBlue);
+}
+
+#hero .smartphone .screen .header .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#hero .smartphone .screen .header .left-header img{
+    width: 30px;
+    border-radius: 50%;
+    border: 1.8px solid var(--White);
+}
+
+#hero .smartphone .screen .notch{
+    background-color: var(--White);
+    width: 53%;
+    height: 20px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 507px;
+    margin: auto;
+}
+
+#hero .smartphone .screen .messages{
+    padding: 2px 15px 0;
+}
+
+#hero .smartphone .screen .received-messages .text{
+    background-color: var(--GrayishBlue);
+    font-size: 11px;
+    padding: 7px;
+    border-radius: 15px 15px 15px 5px;
+    max-width: 170px;
+    margin-top: 7px;
+    color: var(--ModerateViolet);
+}
+
+#hero .smartphone .screen .sent-messages .sent-images > img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+#hero .smartphone .screen .sent-messages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#hero .smartphone .screen .sent-messages .sent-images{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+#hero .smartphone .screen .sent-messages .text{
+    background-color: var(--White);
+    font-size: 11px;
+    padding: 7px;
+    border-radius: 15px 15px 5px 15px;
+    max-width: 170px;
+    margin-top: 7px;
+    color: var(--VeryDarkDesaturatedViolet);
+}
+
+#hero .smartphone .screen .walk-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero .smartphone .screen .walk-message{
+    background: rgb(233,66,255);
+    background: linear-gradient(90deg, rgba(233,66,255,1) 16%, rgba(136,56,255,1) 100%);
+    font-size: 11px;
+    padding: 12px 18px 12px 7px;
+    border-radius: 15px 15px 15px 5px;
+    max-width: 190px;
+    margin-top: 7px;
+    color: var(--White);
+}
+
+#hero .smartphone .screen .walk-message .money{
+    font-weight: 700;
+    font-size: var(--FontSize);
+}
+
+#hero .smartphone .screen .walk-message .walk-message-wrapped{
+    display: flex;
+    gap: 10px;
+
+}
+
+#hero .smartphone .screen .message-input i{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: var(--White);
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 3px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--VeryDarkDesaturatedViolet);
+    text-align: center;
+    margin: auto;
+}
+
+#hero .smartphone .screen .message-input{
+    margin-top: 20px;
+    position: relative;
+}
+
+#hero .smartphone .screen .message-input input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 33px;
+}
+
+/*RIGHT*/
+#hero .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+#hero .right > *{
+    position: relative;
+    right: 10px;
+}
+
+#hero .right .title{
+    font-size: 40px;
+    color: var(--VeryDarkDesaturatedViolet);
+    letter-spacing: 1.2px;
+    font-size: 50px;
+}
+
+#hero .right .desc{
+    max-width: 390px;
+    line-height: 20px;
+    font-size: var(--FontSize);
+    color: var(--GrayishBlue);
+    line-height: 23px;
+}
+
+#hero .right .gray-effect{
+    background-color: hsl(270, 20%, 92%);
+    position: absolute;
+    width: 314px;
+    height: calc(100% - 25px);
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    border-radius: 500px 500px 0 0;
+}
+
+@media screen and (max-width: 890px){
+    #hero .right .gray-effect{
+        display: none;
+    }
+
+    #hero .left .purple-effect{
+        width: 244px;
+    }
+    
+    #hero .smartphone{
+        left: -30px;
+    }
+
+    #hero .right{
+        padding: 0 0 10px;
+    }
+
+    #hero .right > *{
+        right: 180px;
+    }
+
+    :is(#hero .right) .desc,
+    :is(#hero .right) .title{
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 703px){
+    #hero{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    #hero .left{
+        width: 100%;
+    }
+
+    #hero .left .purple-effect{
+        width: calc(50%);
+        height:  calc(100% - 100px);
+        border-radius: 0 0 500px 0;
+    }
+
+    #hero .smartphone{
+        position: static;
+        background-color: var(--White);
+        height: 547px;
+        width: 280px;
+        border-radius: 33px;
+        padding: 10px;
+        margin-top: 55.25px;
+    }
+
+    #hero .right{
+        align-items: center;
+        padding: 30px;
+    }
+
+    #hero .right > *{
+        right: 0;
+        text-align: center;
+        min-width: 65%;
+    }
+
+    #hero .right .title{
+        font-size: 40px;
+        min-width: 70%;
+    }
+
+    #hero .right .gray-effect{
+        display: block;
+        height: 460px;
+        border-radius: 500px 0 0 0;
+        right: -120px;
+    }
+}
